@@ -33,7 +33,16 @@ public class BannerRenderTest {
     }
 
     @Test
-    public void should_not_print_something_when_platform_ture_and_browser_false(){
+    public void should_print_fail_message_when_platform_ture_and_browser_false(){
+        BannerRender bannerRender = new BannerRender();
+        bannerRender.renderBanner("MAC BOOK", "a");
+
+        String expected = "Render fail\r\n";
+        assertEquals(expected, outContent.toString());
+    }
+
+    @Test
+    public void should_print_fail_message_when_platform_false_and_browser_true(){
         BannerRender bannerRender = new BannerRender();
         bannerRender.renderBanner("MAC BOOK", "a");
 
