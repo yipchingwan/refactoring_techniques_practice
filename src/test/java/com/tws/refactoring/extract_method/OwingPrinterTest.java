@@ -28,7 +28,7 @@ public class OwingPrinterTest {
     }
 
     @Test
-    public void printOwing() {
+    public void should_print_result_based_on_order() {
         double amount = 4.0;
         String serviceName = "First Order";
         Order orderA = new Order(amount);
