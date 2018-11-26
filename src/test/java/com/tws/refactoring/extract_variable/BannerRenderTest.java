@@ -50,6 +50,15 @@ public class BannerRenderTest {
         assertEquals(expected, outContent.toString());
     }
 
+    @Test
+    public void should_print_fail_message_when_platform_false_and_browser_false(){
+        BannerRender bannerRender = new BannerRender();
+        bannerRender.renderBanner("wrong platform", "wrong broswer");
+
+        String expected = "Render fail\r\n";
+        assertEquals(expected, outContent.toString());
+    }
+
 
 
 
