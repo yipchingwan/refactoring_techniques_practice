@@ -25,16 +25,16 @@ public class OwingPrinter {
         System.out.println("name: " + name);
         System.out.println("amount: " + outstanding);
     }
+}
 
-    private class Order {
-        private final double amount;
+class Order {
+    private final double amount;
 
-        public Order(double amount) {
-            this.amount = amount;
-        }
+    public Order(double amount) {
+        this.amount = amount;
+    }
 
-        public double getAmount() {
-            return amount;
-        }
+    public double getAmount() {
+        return amount;
     }
 }
