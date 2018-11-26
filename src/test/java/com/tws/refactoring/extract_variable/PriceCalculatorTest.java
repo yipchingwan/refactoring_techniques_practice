@@ -12,7 +12,6 @@ public class PriceCalculatorTest {
         PriceCalculator priceCalculator = new PriceCalculator();
         double price =  priceCalculator.getPrice(quantity, itemPrice);
 
-
         assertEquals(110.0, price,0.01);
 
 
